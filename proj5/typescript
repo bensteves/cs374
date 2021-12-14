@@ -1,0 +1,12 @@
+Script started on 2021-10-08 11:48:28-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;bjs48@maroon14: ~/cs374/proj5[01;32mbjs48@maroon14[00m:[01;34m~/cs374/proj5[00m$ ./calcPI
+Using 1 trapezoids, the approximate vs actual values of PI are:
+2.000000000000000000000000000000
+3.141592653589793238512808959406
+]0;bjs48@maroon14: ~/cs374/proj5[01;32mbjs48@maroon14[00m:[01;34m~/cs374/proj5[00m$ ./calcPI 10
+Using 10 trapezoids, the approximate vs actual values of PI are:
+3.104518326248318355400912516018
+3.141592653589793238512808959406
+]0;bjs48@maroon14: ~/cs374/proj5[01;32mbjs48@maroon14[00m:[01;34m~/cs374/proj5[00m$ exit
+
+Script done on 2021-10-08 11:48:40-04:00 [COMMAND_EXIT_CODE="0"]
