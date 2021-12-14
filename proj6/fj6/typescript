@@ -1,0 +1,40 @@
+Script started on 2021-10-22 12:17:45-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="125" LINES="24"]
+]0;bjs48@maroon15: ~/cs374/proj6/fj6[01;32mbjs48@maroon15[00m:[01;34m~/cs374/proj6/fj6[00m$ m ./forkJoin6
+The parent (main) thread computed 0.
+
+The sum of the squares from 1 to 0 is 0.
+
+]0;bjs48@maroon15: ~/cs374/proj6/fj6[01;32mbjs48@maroon15[00m:[01;34m~/cs374/proj6/fj6[00m$ ./forkJoin6 4
+Child #2 computed 4
+Child #1 computed 1
+The parent (main) thread computed 0.
+Child #3 computed 9
+
+The sum of the squares from 1 to 3 is 14.
+
+]0;bjs48@maroon15: ~/cs374/proj6/fj6[01;32mbjs48@maroon15[00m:[01;34m~/cs374/proj6/fj6[00m$ ./forkJoin6 19
+Child #1 computed 1
+Child #4 computed 16
+Child #5 computed 25
+Child #2 computed 4
+Child #6 computed 36
+Child #3 computed 9
+Child #8 computed 64
+Child #7 computed 49
+Child #9 computed 81
+Child #10 computed 100
+Child #11 computed 121
+Child #12 computed 144
+Child #13 computed 169
+Child #14 computed 196
+Child #15 computed 225
+Child #16 computed 256
+Child #17 computed 289
+The parent (main) thread computed 0.
+Child #18 computed 324
+
+The sum of the squares from 1 to 18 is 2109.
+
+]0;bjs48@maroon15: ~/cs374/proj6/fj6[01;32mbjs48@maroon15[00m:[01;34m~/cs374/proj6/fj6[00m$ exit
+
+Script done on 2021-10-22 12:18:07-04:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,27 @@
+Script started on 2021-10-22 11:48:56-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;bjs48@maroon15: ~/cs374/proj6/fj2[01;32mbjs48@maroon15[00m:[01;34m~/cs374/proj6/fj2[00m$ ./forkJoin2
+Greetings from the parent, thread #0.
+]0;bjs48@maroon15: ~/cs374/proj6/fj2[01;32mbjs48@maroon15[00m:[01;34m~/cs374/proj6/fj2[00m$ ./forkJoin2 2
+Greetings from the parent, thread #0.
+Greetings from child #1
+]0;bjs48@maroon15: ~/cs374/proj6/fj2[01;32mbjs48@maroon15[00m:[01;34m~/cs374/proj6/fj2[00m$ ./forkJoin2 3
+Greetings from the parent, thread #0.
+Greetings from child #2
+Greetings from child #1
+]0;bjs48@maroon15: ~/cs374/proj6/fj2[01;32mbjs48@maroon15[00m:[01;34m~/cs374/proj6/fj2[00m$ ./forkJoin2 4
+Greetings from child #1
+Greetings from child #2
+Greetings from the parent, thread #0.
+Greetings from child #3
+]0;bjs48@maroon15: ~/cs374/proj6/fj2[01;32mbjs48@maroon15[00m:[01;34m~/cs374/proj6/fj2[00m$ ./forkJoin 2  2 8
+Greetings from child #1
+Greetings from child #4
+Greetings from child #3
+Greetings from child #2
+Greetings from child #7
+Greetings from child #6
+Greetings from child #5
+Greetings from the parent, thread #0.
+]0;bjs48@maroon15: ~/cs374/proj6/fj2[01;32mbjs48@maroon15[00m:[01;34m~/cs374/proj6/fj2[00m$ exit
+
+Script done on 2021-10-22 11:49:46-04:00 [COMMAND_EXIT_CODE="0"]
