@@ -1,0 +1,9 @@
+Script started on 2021-09-24 12:09:39-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;bjs48@maroon13: ~/cs374/proj4/scatter[01;32mbjs48@maroon13[00m:[01;34m~/cs374/proj4/scatter[00m$  mpirun -np 4 -machinefile hosts ./scatter [A]0;bjs48@maroon13: ~/cs374/proj4/scatter[01;32mbjs48@maroon13[00m:[01;34m~/cs374/proj4/scatter[00m$  mpirun -np 4 -machinefile hosts ./scatte[Kr
+Process 0:  11 22
+Process 1:  33 44
+Process 2:  55 66
+Process 3:  77 88
+]0;bjs48@maroon13: ~/cs374/proj4/scatter[01;32mbjs48@maroon13[00m:[01;34m~/cs374/proj4/scatter[00m$ [Kexit
+
+Script done on 2021-09-24 12:09:52-04:00 [COMMAND_EXIT_CODE="0"]

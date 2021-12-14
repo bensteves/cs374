@@ -1,0 +1,14 @@
+Script started on 2021-09-24 11:59:24-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;bjs48@maroon13: ~/cs374/proj4/reduction[01;32mbjs48@maroon13[00m:[01;34m~/cs374/proj4/reduction[00m$ mpirun -np 4 -machinefile hosts ./reductiion
+Process 1 computed 4
+Process 2 computed 9
+Process 3 computed 16
+Process 0 computed 1
+
+The sum of the squares is 30
+
+The max of the squares is 16
+
+]0;bjs48@maroon13: ~/cs374/proj4/reduction[01;32mbjs48@maroon13[00m:[01;34m~/cs374/proj4/reduction[00m$ [Kexit
+
+Script done on 2021-09-24 11:59:35-04:00 [COMMAND_EXIT_CODE="0"]
