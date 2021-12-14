@@ -1,0 +1,15 @@
+Script started on Sat 13 Nov 2021 02:14:25 PM EST
+]0;bjs48@borg-head1:~/cs374/proj7mpi[?1034h[bjs48@borg-head1 proj7mpi]$ ls
+1_10k.slurm  [0m[38;5;34marraySumMPI[0m  arraySumMPI.c  Makefile  typescript
+]0;bjs48@borg-head1:~/cs374/proj7mpi[bjs48@borg-head1 proj7mpi]$ sbatch 1_10ks .slurm
+Submitted batch job 201640
+]0;bjs48@borg-head1:~/cs374/proj7mpi[bjs48@borg-head1 proj7mpi]$ ls -l
+total 32
+-rw-rw---- 1 bjs48 bjs48   344 Nov 13 14:00 1_10k.slurm
+-rwxrwxr-x 1 bjs48 bjs48 13624 Nov 13 13:51 [0m[38;5;34marraySumMPI[0m
+-rw-rw---- 1 bjs48 bjs48  5488 Nov 13 13:29 arraySumMPI.c
+-rw-rw---- 1 bjs48 bjs48   202 Nov 13 13:51 Makefile
+-rw-rw-r-- 1 bjs48 bjs48     0 Nov 13 14:14 typescript
+]0;bjs48@borg-head1:~/cs374/proj7mpi[bjs48@borg-head1 proj7mpi]$ exit
+
+Script done on Sat 13 Nov 2021 02:15:12 PM EST

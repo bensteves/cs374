@@ -1,0 +1,52 @@
+Script started on 2021-11-05 12:00:33-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;bjs48@gold10: ~/cs374/proj7/barrier[01;32mbjs48@gold10[00m:[01;34m~/cs374/proj7/barrier[00m$ make
+gcc -Wall -ansi -pedantic -std=c99 barrier.c -o barrier -fopenmp
+]0;bjs48@gold10: ~/cs374/proj7/barrier[01;32mbjs48@gold10[00m:[01;34m~/cs374/proj7/barrier[00m$ ./barrier 4
+
+Thread 0 of 4 is BEFORE the barrier.
+Thread 0 of 4 is AFTER the barrier.
+Thread 1 of 4 is BEFORE the barrier.
+Thread 1 of 4 is AFTER the barrier.
+Thread 3 of 4 is BEFORE the barrier.
+Thread 3 of 4 is AFTER the barrier.
+Thread 2 of 4 is BEFORE the barrier.
+Thread 2 of 4 is AFTER the barrier.
+
+]0;bjs48@gold10: ~/cs374/proj7/barrier[01;32mbjs48@gold10[00m:[01;34m~/cs374/proj7/barrier[00m$ ./barrier4  4
+
+Thread 0 of 4 is BEFORE the barrier.
+Thread 0 of 4 is AFTER the barrier.
+Thread 2 of 4 is BEFORE the barrier.
+Thread 2 of 4 is AFTER the barrier.
+Thread 3 of 4 is BEFORE the barrier.
+Thread 3 of 4 is AFTER the barrier.
+Thread 1 of 4 is BEFORE the barrier.
+Thread 1 of 4 is AFTER the barrier.
+
+]0;bjs48@gold10: ~/cs374/proj7/barrier[01;32mbjs48@gold10[00m:[01;34m~/cs374/proj7/barrier[00m$ make
+gcc -Wall -ansi -pedantic -std=c99 barrier.c -o barrier -fopenmp
+]0;bjs48@gold10: ~/cs374/proj7/barrier[01;32mbjs48@gold10[00m:[01;34m~/cs374/proj7/barrier[00m$ ./barrier 4
+
+Thread 0 of 4 is BEFORE the barrier.
+Thread 1 of 4 is BEFORE the barrier.
+Thread 3 of 4 is BEFORE the barrier.
+Thread 2 of 4 is BEFORE the barrier.
+Thread 1 of 4 is AFTER the barrier.
+Thread 0 of 4 is AFTER the barrier.
+Thread 3 of 4 is AFTER the barrier.
+Thread 2 of 4 is AFTER the barrier.
+
+]0;bjs48@gold10: ~/cs374/proj7/barrier[01;32mbjs48@gold10[00m:[01;34m~/cs374/proj7/barrier[00m$ ./barrier 4
+
+Thread 0 of 4 is BEFORE the barrier.
+Thread 2 of 4 is BEFORE the barrier.
+Thread 3 of 4 is BEFORE the barrier.
+Thread 1 of 4 is BEFORE the barrier.
+Thread 0 of 4 is AFTER the barrier.
+Thread 1 of 4 is AFTER the barrier.
+Thread 2 of 4 is AFTER the barrier.
+Thread 3 of 4 is AFTER the barrier.
+
+]0;bjs48@gold10: ~/cs374/proj7/barrier[01;32mbjs48@gold10[00m:[01;34m~/cs374/proj7/barrier[00m$ exit
+
+Script done on 2021-11-05 12:01:09-04:00 [COMMAND_EXIT_CODE="0"]

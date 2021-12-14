@@ -1,0 +1,139 @@
+Script started on Sat 13 Nov 2021 02:17:25 PM EST
+]0;bjs48@borg-head1:~/cs374/proj5[?1034h[bjs48@borg-head1 proj5]$ ls
+1_100k.slurm   32_1t.slurm       slurm-199976.out  slurm-200002.out
+1_100m.slurm   4_100k.slurm      slurm-199977.out  slurm-200003.out
+1_10b.slurm    4_100m.slurm      slurm-199978.out  slurm-200004.out
+1_10m.slurm    4_10b.slurm       slurm-199979.out  slurm-200005.out
+1_1b.slurm     4_10m.slurm       slurm-199980.out  slurm-200006.out
+1_1m.slurm     4_1b.slurm        slurm-199981.out  slurm-200007.out
+16_100b.slurm  4_1m.slurm        slurm-199982.out  slurm-200008.out
+16_100k.slurm  64_100b.slurm     slurm-199983.out  slurm-200009.out
+16_100m.slurm  64_1t.slurm       slurm-199984.out  slurm-200010.out
+16_10b.slurm   8_100k.slurm      slurm-199985.out  slurm-200011.out
+16_10m.slurm   8_100m.slurm      slurm-199986.out  slurm-200012.out
+16_1b.slurm    8_10b.slurm       slurm-199987.out  slurm-200013.out
+16_1m.slurm    8_10m.slurm       slurm-199988.out  slurm-200014.out
+2_100k.slurm   8_1b.slurm        slurm-199989.out  slurm-200015.out
+2_100m.slurm   8_1m.slurm        slurm-199990.out  slurm-200016.out
+2_10b.slurm    [0m[38;5;34mcalcPI[0m            slurm-199991.out  slurm-200017.out
+2_10m.slurm    calcPI.c          slurm-199992.out  slurm-200018.out
+2_1b.slurm     calcPI.o          slurm-199993.out  slurm-200020.out
+2_1m.slurm     integral.c        slurm-199994.out  slurm-200021.out
+32_100b.slurm  integral.h        slurm-199995.out  slurm-200024.out
+32_100k.slurm  integral.o        slurm-199996.out  slurm-200062.out
+32_100m.slurm  Makefile          slurm-199997.out  slurm-200063.out
+32_10b.slurm   slurm-199892.out  slurm-199998.out  slurm-200195.out
+32_10m.slurm   slurm-199893.out  slurm-199999.out  slurm-200201.out
+32_1b.slurm    slurm-199911.out  slurm-200000.out  slurm-200202.out
+32_1m.slurm    slurm-199975.out  slurm-200001.out  typescript
+]0;bjs48@borg-head1:~/cs374/proj5[bjs48@borg-head1 proj5]$ sbatch 16_100k.slurm
+Submitted batch job 201641
+]0;bjs48@borg-head1:~/cs374/proj5[bjs48@borg-head1 proj5]$ ls -l
+total 440
+-rw-rw---- 1 bjs48 bjs48   374 Oct 13 20:47 1_100k.slurm
+-rw-rw---- 1 bjs48 bjs48   377 Oct 13 20:47 1_100m.slurm
+-rw-rw---- 1 bjs48 bjs48   379 Oct 13 20:47 1_10b.slurm
+-rw-rw---- 1 bjs48 bjs48   376 Oct 13 20:47 1_10m.slurm
+-rw-rw---- 1 bjs48 bjs48   378 Oct 13 20:47 1_1b.slurm
+-rw-rw---- 1 bjs48 bjs48   375 Oct 13 20:47 1_1m.slurm
+-rw-rw---- 1 bjs48 bjs48   381 Oct 13 21:36 16_100b.slurm
+-rw-rw---- 1 bjs48 bjs48   375 Oct 13 20:47 16_100k.slurm
+-rw-rw---- 1 bjs48 bjs48   378 Oct 13 20:47 16_100m.slurm
+-rw-rw---- 1 bjs48 bjs48   380 Oct 13 20:47 16_10b.slurm
+-rw-rw---- 1 bjs48 bjs48   377 Oct 13 20:47 16_10m.slurm
+-rw-rw---- 1 bjs48 bjs48   379 Oct 13 20:47 16_1b.slurm
+-rw-rw---- 1 bjs48 bjs48   376 Oct 13 20:47 16_1m.slurm
+-rw-rw---- 1 bjs48 bjs48   374 Oct 13 20:47 2_100k.slurm
+-rw-rw---- 1 bjs48 bjs48   377 Oct 13 20:47 2_100m.slurm
+-rw-rw---- 1 bjs48 bjs48   379 Oct 13 20:47 2_10b.slurm
+-rw-rw---- 1 bjs48 bjs48   376 Oct 13 20:47 2_10m.slurm
+-rw-rw---- 1 bjs48 bjs48   378 Oct 13 20:47 2_1b.slurm
+-rw-rw---- 1 bjs48 bjs48   375 Oct 13 20:47 2_1m.slurm
+-rw-rw---- 1 bjs48 bjs48   381 Oct 13 21:43 32_100b.slurm
+-rw-rw---- 1 bjs48 bjs48   375 Oct 13 20:47 32_100k.slurm
+-rw-rw---- 1 bjs48 bjs48   378 Oct 13 20:47 32_100m.slurm
+-rw-rw---- 1 bjs48 bjs48   380 Oct 13 20:47 32_10b.slurm
+-rw-rw---- 1 bjs48 bjs48   377 Oct 13 20:47 32_10m.slurm
+-rw-rw---- 1 bjs48 bjs48   379 Oct 13 20:47 32_1b.slurm
+-rw-rw---- 1 bjs48 bjs48   376 Oct 13 20:47 32_1m.slurm
+-rw-rw---- 1 bjs48 bjs48   382 Oct 13 21:43 32_1t.slurm
+-rw-rw---- 1 bjs48 bjs48   374 Oct 13 20:47 4_100k.slurm
+-rw-rw---- 1 bjs48 bjs48   377 Oct 13 20:47 4_100m.slurm
+-rw-rw---- 1 bjs48 bjs48   379 Oct 13 20:47 4_10b.slurm
+-rw-rw---- 1 bjs48 bjs48   376 Oct 13 20:47 4_10m.slurm
+-rw-rw---- 1 bjs48 bjs48   378 Oct 13 20:47 4_1b.slurm
+-rw-rw---- 1 bjs48 bjs48   375 Oct 13 20:47 4_1m.slurm
+-rw-rw---- 1 bjs48 bjs48   381 Oct 13 22:12 64_100b.slurm
+-rw-rw---- 1 bjs48 bjs48   382 Oct 13 22:31 64_1t.slurm
+-rw-rw---- 1 bjs48 bjs48   374 Oct 13 20:47 8_100k.slurm
+-rw-rw---- 1 bjs48 bjs48   377 Oct 13 20:47 8_100m.slurm
+-rw-rw---- 1 bjs48 bjs48   379 Oct 13 20:47 8_10b.slurm
+-rw-rw---- 1 bjs48 bjs48   376 Oct 13 20:47 8_10m.slurm
+-rw-rw---- 1 bjs48 bjs48   378 Oct 13 20:47 8_1b.slurm
+-rw-rw---- 1 bjs48 bjs48   375 Oct 13 20:47 8_1m.slurm
+-rwxrwxr-x 1 bjs48 bjs48 17072 Oct 13 22:07 [0m[38;5;34mcalcPI[0m
+-rw-rw---- 1 bjs48 bjs48  2046 Oct 13 22:07 calcPI.c
+-rw-rw-r-- 1 bjs48 bjs48  8344 Oct 13 22:07 calcPI.o
+-rw-rw---- 1 bjs48 bjs48  1588 Oct 13 22:07 integral.c
+-rw-rw---- 1 bjs48 bjs48   305 Oct 12 20:11 integral.h
+-rw-rw-r-- 1 bjs48 bjs48  4960 Oct 13 22:07 integral.o
+-rw-rw---- 1 bjs48 bjs48   438 Oct 13 19:42 Makefile
+-rw-rw-r-- 1 bjs48 bjs48   336 Oct 12 20:36 slurm-199892.out
+-rw-rw-r-- 1 bjs48 bjs48   704 Oct 12 20:39 slurm-199893.out
+-rw-rw-r-- 1 bjs48 bjs48   826 Oct 13 10:06 slurm-199911.out
+-rw-rw-r-- 1 bjs48 bjs48   151 Oct 13 19:47 slurm-199975.out
+-rw-rw-r-- 1 bjs48 bjs48   154 Oct 13 19:50 slurm-199976.out
+-rw-rw-r-- 1 bjs48 bjs48   154 Oct 13 19:51 slurm-199977.out
+-rw-rw-r-- 1 bjs48 bjs48   151 Oct 13 20:49 slurm-199978.out
+-rw-rw-r-- 1 bjs48 bjs48   152 Oct 13 20:51 slurm-199979.out
+-rw-rw-r-- 1 bjs48 bjs48   153 Oct 13 20:51 slurm-199980.out
+-rw-rw-r-- 1 bjs48 bjs48   154 Oct 13 20:51 slurm-199981.out
+-rw-rw-r-- 1 bjs48 bjs48   155 Oct 13 20:51 slurm-199982.out
+-rw-rw-r-- 1 bjs48 bjs48   157 Oct 13 20:52 slurm-199983.out
+-rw-rw-r-- 1 bjs48 bjs48   151 Oct 13 20:57 slurm-199984.out
+-rw-rw-r-- 1 bjs48 bjs48   152 Oct 13 20:57 slurm-199985.out
+-rw-rw-r-- 1 bjs48 bjs48   153 Oct 13 20:57 slurm-199986.out
+-rw-rw-r-- 1 bjs48 bjs48   154 Oct 13 20:58 slurm-199987.out
+-rw-rw-r-- 1 bjs48 bjs48   155 Oct 13 20:58 slurm-199988.out
+-rw-rw-r-- 1 bjs48 bjs48   157 Oct 13 20:58 slurm-199989.out
+-rw-rw-r-- 1 bjs48 bjs48   151 Oct 13 21:05 slurm-199990.out
+-rw-rw-r-- 1 bjs48 bjs48   152 Oct 13 21:05 slurm-199991.out
+-rw-rw-r-- 1 bjs48 bjs48   153 Oct 13 21:05 slurm-199992.out
+-rw-rw-r-- 1 bjs48 bjs48   154 Oct 13 21:05 slurm-199993.out
+-rw-rw-r-- 1 bjs48 bjs48   155 Oct 13 21:05 slurm-199994.out
+-rw-rw-r-- 1 bjs48 bjs48   157 Oct 13 21:05 slurm-199995.out
+-rw-rw-r-- 1 bjs48 bjs48   151 Oct 13 21:15 slurm-199996.out
+-rw-rw-r-- 1 bjs48 bjs48   152 Oct 13 21:15 slurm-199997.out
+-rw-rw-r-- 1 bjs48 bjs48   153 Oct 13 21:15 slurm-199998.out
+-rw-rw-r-- 1 bjs48 bjs48   154 Oct 13 21:15 slurm-199999.out
+-rw-rw-r-- 1 bjs48 bjs48   155 Oct 13 21:16 slurm-200000.out
+-rw-rw-r-- 1 bjs48 bjs48   156 Oct 13 21:16 slurm-200001.out
+-rw-rw-r-- 1 bjs48 bjs48   151 Oct 13 21:18 slurm-200002.out
+-rw-rw-r-- 1 bjs48 bjs48   152 Oct 13 21:18 slurm-200003.out
+-rw-rw-r-- 1 bjs48 bjs48   153 Oct 13 21:19 slurm-200004.out
+-rw-rw-r-- 1 bjs48 bjs48   154 Oct 13 21:19 slurm-200005.out
+-rw-rw-r-- 1 bjs48 bjs48   155 Oct 13 21:19 slurm-200006.out
+-rw-rw-r-- 1 bjs48 bjs48   156 Oct 13 21:19 slurm-200007.out
+-rw-rw-r-- 1 bjs48 bjs48   151 Oct 13 21:23 slurm-200008.out
+-rw-rw-r-- 1 bjs48 bjs48   152 Oct 13 21:23 slurm-200009.out
+-rw-rw-r-- 1 bjs48 bjs48   153 Oct 13 21:23 slurm-200010.out
+-rw-rw-r-- 1 bjs48 bjs48   154 Oct 13 21:23 slurm-200011.out
+-rw-rw-r-- 1 bjs48 bjs48   155 Oct 13 21:23 slurm-200012.out
+-rw-rw-r-- 1 bjs48 bjs48   156 Oct 13 21:23 slurm-200013.out
+-rw-rw-r-- 1 bjs48 bjs48   153 Oct 13 21:31 slurm-200014.out
+-rw-rw-r-- 1 bjs48 bjs48   158 Oct 13 21:38 slurm-200015.out
+-rw-rw-r-- 1 bjs48 bjs48   158 Oct 13 21:41 slurm-200016.out
+-rw-rw-r-- 1 bjs48 bjs48   158 Oct 13 21:45 slurm-200017.out
+-rw-rw-r-- 1 bjs48 bjs48   160 Oct 13 21:51 slurm-200018.out
+-rw-rw-r-- 1 bjs48 bjs48   154 Oct 13 22:02 slurm-200020.out
+-rw-rw-r-- 1 bjs48 bjs48   156 Oct 13 22:03 slurm-200021.out
+-rw-rw-r-- 1 bjs48 bjs48   158 Oct 13 22:13 slurm-200024.out
+-rw-rw-r-- 1 bjs48 bjs48   160 Oct 13 22:33 slurm-200062.out
+-rw-rw-r-- 1 bjs48 bjs48   160 Oct 13 22:37 slurm-200063.out
+-rw-rw-r-- 1 bjs48 bjs48   158 Oct 14 16:44 slurm-200195.out
+-rw-rw-r-- 1 bjs48 bjs48   151 Oct 14 17:10 slurm-200201.out
+-rw-rw-r-- 1 bjs48 bjs48   151 Oct 14 17:11 slurm-200202.out
+-rw-rw-r-- 1 bjs48 bjs48     0 Nov 13 14:17 typescript
+]0;bjs48@borg-head1:~/cs374/proj5[bjs48@borg-head1 proj5]$ exit
+
+Script done on Sat 13 Nov 2021 02:18:36 PM EST

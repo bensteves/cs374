@@ -1,0 +1,54 @@
+./parallelForStripes 2
+
+Thread 0 performed iteration 0
+Thread 0 performed iteration 2
+Thread 0 performed iteration 4
+Thread 0 performed iteration 6
+Thread 1 performed iteration 1
+Thread 1 performed iteration 3
+Thread 1 performed iteration 5
+Thread 1 performed iteration 7
+
+./parallelForBlocks 2
+
+Thread 0 performed iteration 0
+Thread 0 performed iteration 1
+Thread 0 performed iteration 2
+Thread 0 performed iteration 3
+Thread 1 performed iteration 4
+Thread 1 performed iteration 5
+Thread 1 performed iteration 6
+Thread 1 performed iteration 7
+
+
+
+
+./parallelForStripes 4
+
+Thread 0 performed iteration 0
+Thread 0 performed iteration 4
+Thread 1 performed iteration 1
+Thread 1 performed iteration 5
+Thread 3 performed iteration 3
+Thread 3 performed iteration 7
+Thread 2 performed iteration 2
+Thread 2 performed iteration 6
+
+ ./parallelForBlocks 4
+
+Thread 0 performed iteration 0
+Thread 0 performed iteration 1
+Thread 3 performed iteration 6
+Thread 3 performed iteration 7
+Thread 2 performed iteration 4
+Thread 2 performed iteration 5
+Thread 1 performed iteration 2
+Thread 1 performed iteration 3
+
+
+
+
+
+]0;bjs48@gold10: ~/cs374/proj7/blocks[01;32mbjs48@gold10[00m:[01;34m~/cs374/proj7/blocks[00m$ exit
+
+Script done on 2021-11-05 12:22:44-04:00 [COMMAND_EXIT_CODE="0"]
