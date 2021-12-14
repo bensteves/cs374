@@ -1,0 +1,28 @@
+Script started on 2021-11-16 22:28:06-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="97" LINES="26"]
+]0;bjs48@maroon04: ~/cs374/proj8/spmd[01;32mbjs48@maroon04[00m:[01;34m~/cs374/proj8/spmd[00m$ make
+mpicc -Wall -ansi -pedantic -std=c99 spmd.c -o spmd -fopenmp
+]0;bjs48@maroon04: ~/cs374/proj8/spmd[01;32mbjs48@maroon04[00m:[01;34m~/cs374/proj8/spmd[00m$ mpirun -np 2 ./spmd
+Hello from thread 0 of 1 from process 0 of 2 on maroon04
+Hello from thread 0 of 1 from process 1 of 2 on maroon04
+]0;bjs48@maroon04: ~/cs374/proj8/spmd[01;32mbjs48@maroon04[00m:[01;34m~/cs374/proj8/spmd[00m$ make
+mpicc -Wall -ansi -pedantic -std=c99 spmd.c -o spmd -fopenmp
+]0;bjs48@maroon04: ~/cs374/proj8/spmd[01;32mbjs48@maroon04[00m:[01;34m~/cs374/proj8/spmd[00m$ mpirun -np 2 ./spmd
+Hello from thread 0 of 6 from process 0 of 2 on maroon04
+Hello from thread 3 of 6 from process 1 of 2 on maroon04
+Hello from thread 4 of 6 from process 1 of 2 on maroon04
+Hello from thread 2 of 6 from process 1 of 2 on maroon04
+Hello from thread 5 of 6 from process 1 of 2 on maroon04
+Hello from thread 0 of 6 from process 1 of 2 on maroon04
+Hello from thread 4 of 6 from process 0 of 2 on maroon04
+Hello from thread 2 of 6 from process 0 of 2 on maroon04
+Hello from thread 1 of 6 from process 1 of 2 on maroon04
+Hello from thread 1 of 6 from process 0 of 2 on maroon04
+Hello from thread 5 of 6 from process 0 of 2 on maroon04
+Hello from thread 3 of 6 from process 0 of 2 on maroon04
+]0;bjs48@maroon04: ~/cs374/proj8/spmd[01;32mbjs48@maroon04[00m:[01;34m~/cs374/proj8/spmd[00m$ exit
+
+Script done on 2021-11-16 22:28:37-05:00 [COMMAND_EXIT_CODE="0"]
+
+
+With pragma out, runs using the number of processes specified. It keeps track of both the numProcs and numThreads. 
+When numThreads isn't used, it just defaults to 0. When pragma is in then it runs with max num threads or whatever
