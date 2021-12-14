@@ -1,0 +1,31 @@
+Script started on 2021-09-28 18:58:45-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;bjs48@gold05: ~/cs374/exc1/parallelLoopChunks[01;32mbjs48@gold05[00m:[01;34m~/cs374/exc1/parallelLoopChunks[00m$ mpirun -np 1 -machinefile hosts ./pparallelLoopChunks
+Process 0 is performing iteration 0
+Process 0 is performing iteration 1
+Process 0 is performing iteration 2
+Process 0 is performing iteration 3
+Process 0 is performing iteration 4
+Process 0 is performing iteration 5
+Process 0 is performing iteration 6
+Process 0 is performing iteration 7
+]0;bjs48@gold05: ~/cs374/exc1/parallelLoopChunks[01;32mbjs48@gold05[00m:[01;34m~/cs374/exc1/parallelLoopChunks[00m$ [Kmpirun -np 2 -machinefile hosts ./pparallelLoopChunks
+Process 0 is performing iteration 0
+Process 0 is performing iteration 1
+Process 0 is performing iteration 2
+Process 0 is performing iteration 3
+Process 1 is performing iteration 4
+Process 1 is performing iteration 5
+Process 1 is performing iteration 6
+Process 1 is performing iteration 7
+]0;bjs48@gold05: ~/cs374/exc1/parallelLoopChunks[01;32mbjs48@gold05[00m:[01;34m~/cs374/exc1/parallelLoopChunks[00m$ [Kmpirun -np 3 -machinefile hosts ./pparallelLoopChunks
+Process 0 is performing iteration 0
+Process 0 is performing iteration 1
+Process 0 is performing iteration 2
+Process 2 is performing iteration 6
+Process 2 is performing iteration 7
+Process 1 is performing iteration 3
+Process 1 is performing iteration 4
+Process 1 is performing iteration 5
+]0;bjs48@gold05: ~/cs374/exc1/parallelLoopChunks[01;32mbjs48@gold05[00m:[01;34m~/cs374/exc1/parallelLoopChunks[00m$ [Kexit
+
+Script done on 2021-09-28 18:59:19-04:00 [COMMAND_EXIT_CODE="0"]

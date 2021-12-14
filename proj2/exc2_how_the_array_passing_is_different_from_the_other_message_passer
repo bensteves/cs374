@@ -1,0 +1,98 @@
+Script started on 2021-09-10 12:04:46-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+
+MESSAGE PASSING
+
+]0;bjs48@maroon16: ~/cs374/exc2[01;32mbjs48@maroon16[00m:[01;34m~/cs374/exc2[00m$ mpirun -np 2 -machinefile hosts ./messagePassing
+Process 0 of 2 computed 0.000000 and received 1.000000
+Process 1 of 2 computed 1.000000 and received 0.000000
+]0;bjs48@maroon16: ~/cs374/exc2[01;32mbjs48@maroon16[00m:[01;34m~/cs374/exc2[00m$ mpirun -np 2 -machinefile hosts ./messagePassing[1P[1@4
+Process 3 of 4 computed 1.732051 and received 1.414214
+Process 2 of 4 computed 1.414214 and received 1.732051
+Process 0 of 4 computed 0.000000 and received 1.000000
+Process 1 of 4 computed 1.000000 and received 0.000000
+]0;bjs48@maroon16: ~/cs374/exc2[01;32mbjs48@maroon16[00m:[01;34m~/cs374/exc2[00m$ mpirun -np 2 -machinefile hosts ./messagePassing[1P[1@6
+Process 0 of 6 computed 0.000000 and received 1.000000
+Process 1 of 6 computed 1.000000 and received 0.000000
+Process 2 of 6 computed 1.414214 and received 1.732051
+Process 3 of 6 computed 1.732051 and received 1.414214
+Process 4 of 6 computed 2.000000 and received 2.236068
+Process 5 of 6 computed 2.236068 and received 2.000000
+
+
+MASTER WORKER
+
+bjs48@maroon16:~/cs374/exc2$ mpicc masterWorker.c -Wall -o masterWorker
+bjs48@maroon16:~/cs374/exc2$  mpirun -np 1 -machinefile hosts ./masterWorker 
+Greetings from the master, # 0 (maroon16) of 1 processes
+
+bjs48@maroon16:~/cs374/exc2$  mpirun -np 2 -machinefile hosts ./masterWorker 
+Greetings from a worker, # 1 (maroon09) of 2 processes
+Greetings from the master, # 0 (maroon16) of 2 processes
+
+bjs48@maroon16:~/cs374/exc2$  mpirun -np 4 -machinefile hosts ./masterWorker 
+Greetings from a worker, # 2 (maroon26) of 4 processes
+Greetings from a worker, # 1 (maroon09) of 4 processes
+Greetings from a worker, # 3 (gold20) of 4 processes
+Greetings from the master, # 0 (maroon16) of 4 processes
+
+bjs48@maroon16:~/cs374/exc2$  mpirun -np 8 -machinefile hosts ./masterWorker 
+Greetings from the master, # 0 (maroon16) of 8 processes
+Greetings from a worker, # 2 (maroon26) of 8 processes
+Greetings from a worker, # 5 (maroon22) of 8 processes
+Greetings from a worker, # 6 (maroon10) of 8 processes
+Greetings from a worker, # 1 (maroon09) of 8 processes
+Greetings from a worker, # 3 (gold20) of 8 processes
+Greetings from a worker, # 4 (gold23) of 8 processes
+Greetings from a worker, # 7 (gold15) of 8 processes
+
+
+]0;bjs48@maroon16: ~/cs374/exc2[01;32mbjs48@maroon16[00m:[01;34m~/cs374/exc2[00m$ mpicc arrayPassing.c -Wall -o arrayPassing
+]0;bjs48@maroon16: ~/cs374/exc2[01;32mbjs48@maroon16[00m:[01;34m~/cs374/exc2[00m$ mpirun -np 2 machinefile hosts ./m arrayPassing
+[proxy:0:0@maroon16] HYDU_create_process (utils/launch/launch.c:74): execvp error on file machinefile (No such file or directory)
+[proxy:0:0@maroon16] HYDU_create_process (utils/launch/launch.c:74): execvp error on file machinefile (No such file or directory)
+]0;bjs48@maroon16: ~/cs374/exc2[01;32mbjs48@maroon16[00m:[01;34m~/cs374/exc2[00m$  mpicc masterWorker.c -Wall -o masterWorker            arrayPassing[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@a[1@r[1@r[1@a[1@y[1@P[1@a[1@s[1@s[1@i[1@n[1@g[1@.c -Wall -o arrayPassing -lm
+]0;bjs48@maroon16: ~/cs374/exc2[01;32mbjs48@maroon16[00m:[01;34m~/cs374/exc2[00m$  mpirun -np 1 -machinefile hosts ./masterWorker              arrayPassing[1@21[1P
+Process 0 of 2 received the message:
+	Process 1 is on host 'maroon09'
+
+Process 1 of 2 received the message:
+	Process 0 is on host 'maroon16'
+
+]0;bjs48@maroon16: ~/cs374/exc2[01;32mbjs48@maroon16[00m:[01;34m~/cs374/exc2[00m$ mpirun -np 2 -machinefile hosts ./arrayPassing2[1P[1@4
+Process 0 of 4 received the message:
+	Process 1 is on host 'maroon09'
+
+Process 1 of 4 received the message:
+	Process 0 is on host 'maroon16'
+
+Process 2 of 4 received the message:
+	Process 3 is on host 'gold20'
+
+Process 3 of 4 received the message:
+	Process 2 is on host 'maroon26'
+
+]0;bjs48@maroon16: ~/cs374/exc2[01;32mbjs48@maroon16[00m:[01;34m~/cs374/exc2[00m$ mpirun -np 2 -machinefile hosts ./arrayPassing[1P[1@6
+Process 2 of 6 received the message:
+	Process 3 is on host 'gold20'
+
+Process 3 of 6 received the message:
+	Process 2 is on host 'maroon26'
+
+Process 0 of 6 received the message:
+	Process 1 is on host 'maroon09'
+
+Process 1 of 6 received the message:
+	Process 0 is on host 'maroon16'
+
+Process 4 of 6 received the message:
+	Process 5 is on host 'maroon22'
+
+Process 5 of 6 received the message:
+	Process 4 is on host 'gold23'
+
+]0;bjs48@maroon16: ~/cs374/exc2[01;32mbjs48@maroon16[00m:[01;34m~/cs374/exc2[00m$ exit
+
+Script done on 2021-09-10 12:08:56-04:00 [COMMAND_EXIT_CODE="0"]
+
+
+
